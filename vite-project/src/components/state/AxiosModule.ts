@@ -4,7 +4,7 @@ import { LoginInfo ,SignInInfo , WritePostInfo, UserListRequestInfo, ModifyPostI
 import { getAccessToken, getRefreshToken } from "./TokenAction";
 
 
-const BASE_URL = 'http://54.180.21.153:8080';
+const BASE_URL =  import.meta.env.VITE_BASE_URL;
 
 export type ConfigType = {
   method: string;
